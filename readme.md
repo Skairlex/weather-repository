@@ -15,6 +15,11 @@ docker pull jfponce1/weather-api:1.0
 ![](../../../Desktop/Screenshot_28.png)
 
 
+###Datos adicionales
+- APIKEY -> f4010aa70aa1300ce86a401803d670eb
 
+###Pasos
+- ./gradlew clean build 
+- ./gradlew bootRun     
 
 
