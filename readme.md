@@ -12,7 +12,7 @@ http://localhost:8080/swagger-ui/index.html
 docker pull jfponce1/weather-api:1.0
 
 ### Diagrama de componentes 
-![](../../../Desktop/Screenshot_28.png)
+![](Screenshot_28.png)
 
 
 ### Datos adicionales
