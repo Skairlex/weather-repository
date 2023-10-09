@@ -1,0 +1,32 @@
+19:43:25.544 [main] INFO  c.pfcti.weather.WeatherApplication - Starting WeatherApplication using Java 17.0.8 with PID 43540 (C:\Users\JOHN\Desktop\Prueba proamerica\weather\weather-services\build\classes\java\main started by JOHN in C:\Users\JOHN\Desktop\Prueba proamerica\weather\weather-services)
+19:43:25.544 [main] INFO  c.pfcti.weather.WeatherApplication - The following 1 profile is active: "CONSOLA"
+19:43:26.160 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:43:26.214 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+19:43:26.757 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:43:26.757 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:43:26.757 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:43:26.757 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+19:43:26.862 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:43:26.862 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1261 ms
+19:43:26.899 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:43:27.144 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+19:43:27.147 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:43:27.154 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+19:43:27.278 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:43:27.334 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+19:43:27.345 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+19:43:27.478 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:43:27.632 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:43:27.870 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:43:28.496 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:43:28.543 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:43:28.565 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:43:28.997 [main] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.pfcti.weather.repository.IWheatherRepository
+19:43:29.098 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:43:29.134 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:43:29.134 [main] INFO  c.pfcti.weather.WeatherApplication - Started WeatherApplication in 3.965 seconds (process running for 4.458)
+19:43:42.757 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:43:42.757 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:43:42.759 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+19:43:42.927 [http-nio-8080-exec-3] INFO  c.p.w.controller.WeatherController - Nueva peticion
+19:43:44.340 [http-nio-8080-exec-3] INFO  c.p.w.utils.ConexionWsWorkflowUtil - Respuesta = {"coord":{"lon":-84.1,"lat":10.01},"weather":[{"id":501,"main":"Rain","description":"moderate rain","icon":"10n"}],"base":"stations","main":{"temp":292.36,"feels_like":292.79,"temp_min":291.47,"temp_max":295.72,"pressure":1015,"humidity":94},"visibility":10000,"wind":{"speed":1.54,"deg":300},"rain":{"1h":1.78},"clouds":{"all":75},"dt":1696811984,"sys":{"type":2,"id":2004086,"country":"CR","sunrise":1696764277,"sunset":1696807386},"timezone":-21600,"id":3621683,"name":"San Rafael","cod":200}
