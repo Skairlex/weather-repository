@@ -23,3 +23,4 @@ docker pull jfponce1/weather-api:1.0
 - ./gradlew bootRun     
 
 
+### No se realizo el apartado de seguridades
