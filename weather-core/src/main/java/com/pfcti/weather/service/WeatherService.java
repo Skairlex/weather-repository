@@ -43,13 +43,14 @@ public class WeatherService implements IWeatherService{
                 request.getLat(), request.getLon());
             Boolean exist = false;
             Date actualTime = new Date();
-            for (WeatherHistory found : foundedList) {
+            if(!foundedList.isEmpty()){
+                //Get first of list because is the most recent
+                WeatherHistory found =foundedList.get(0);
                 long differenceInMilis = actualTime.getTime() - found.getCreated().getTime();
                 long differenceInMinutes = differenceInMilis / (60 * 1000);
                 if (differenceInMinutes < 10) {
                     exist = true;
                     weatherResponse = found;
-                    break;
                 }
             }
             ResponseApiWeather weather = null;
@@ -65,7 +66,7 @@ public class WeatherService implements IWeatherService{
                     .tempMin(weather.getMainWeather().getTempMin())
                     .tempMax(weather.getMainWeather().getTempMax())
                     .humidity(weather.getMainWeather().getHumidity())
-                    .created(weather.getDateCalculation())
+                    .created(actualTime)
                     .build();
                 weatherRepository.save(weatherResponse);
             }
